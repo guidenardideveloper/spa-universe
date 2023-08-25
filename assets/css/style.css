@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --white-primary-color: #ffffff;
+    --white-secondary-color: #e1e1e6;
+    --gray-primary-color: #c4c4cc;
+    --blue-primary-color: #02799d;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0 4rem 7.2rem;
+}
+.logo-company {
+    margin-right: 4.3rem;
+}
+nav a {
+    margin-right: 5.3rem;
+    text-decoration: none;
+
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    color: var(--gray-primary-color);
+}
+nav a:last-child {
+    margin-right: 0;
+}
+a.active {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: var(--white-primary-color);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url('../images/mountains-universe-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-wrapper-home {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.text-wrapper-home h1 {
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--white-secondary-color);
+}
+.text-wrapper-home button {
+    width: max-content;
+    align-self: center;
+
+    padding: 1.2rem 3.2rem;
+
+    outline: none;
+    border: 2px solid var(--white-primary-color);
+    border-radius: .5rem;
+
+    background-color: transparent;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: var(--white-primary-color);
+
+    transition: all .3s ease-in;
+
+    cursor: pointer;
+}
+.text-wrapper-home button:hover {
+    background-color: var(--white-primary-color);
+    color: var(--blue-primary-color);
+}
+
+.container-universe {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('../images/mountains-universe02.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+}
+.text-wrapper {
+    width: 64.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 18.5rem;
+    left: 10.2rem;
+}
+.text-wrapper h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--white-secondary-color);
+}
+.text-wrapper p {
+    margin-top: 1.8rem;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--white-secondary-color);
+}
+
+.container-exploration {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('../images/mountains-universe-3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        top: 0;
+        right: 0;
+        left: 0;
+
+        width: max-content;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+    .text-wrapper {
+        top: 35%;
+    }
+}
+@media (min-width: 425px) and (max-width: 750px) {
+    .text-wrapper {
+        width: auto;
+        padding-right: 6rem;
+    }
+    .text-wrapper p {
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 425px) and (max-width: 465px) {
+    .logo-company {
+        display: none;
+    }
+    .text-wrapper-home h1 {
+        font-size: 4.5rem;
+    }
+    .text-wrapper h1 {
+        font-size: 4.5rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 424px) {
+    .logo-company {
+        display: none;
+    }
+    nav a {
+        font-size: 1.6rem;
+    }
+    a.active {
+        font-size: 1.7rem;
+    }
+    .text-wrapper {
+        width: auto;
+        padding-right:0;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 0 1rem;
+    }
+    .text-wrapper h1 {
+        font-size: 4.2rem;
+        text-align: center;
+    }
+    .text-wrapper p {
+        font-size: 1.4rem;
+        text-align: center;
+        overflow: hidden;
+    }
+}
